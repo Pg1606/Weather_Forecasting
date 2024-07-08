@@ -1,0 +1,60 @@
+.search-container {
+  position: relative;
+  width: 300px; /* Adjust as needed */
+  font-family: Arial, sans-serif; /* Set a default font family */
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px; /* Improved readability */
+  transition: border-color 0.3s ease-in-out; /* Smooth transition for border color */
+}
+
+.search-input:focus {
+  border-color: #007BFF; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  border-radius: 0 0 4px 4px; /* Rounded corners for the bottom of the dropdown */
+  overflow: hidden; /* Ensure rounded corners are visible */
+}
+
+.dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee; /* Add bottom border for separation */
+  font-size: 16px; /* Improved readability */
+  transition: background-color 0.3s ease-in-out; /* Smooth transition for background color */
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown-item:last-child {
+  border-bottom: none; /* Remove bottom border for the last item */
+}
+
+.dropdown-item.selected {
+  background-color: #007BFF;
+  color: #fff; /* White text for selected item */
+}
